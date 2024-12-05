@@ -1,0 +1,35 @@
+.socials {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+  gap: 32px;
+  width: 300px;
+  flex-wrap: wrap;
+
+  @include vp-1023 {
+    gap: 20px;
+  }
+
+  @include vp-767 {
+    gap: 30px;
+    width: 278px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-trout;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-ecru-white;
+    }
+  }
+
+  &__logo-icon {
+    flex-shrink: 0;
+  }
+}
